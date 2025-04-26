@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Ukrainian agriculture theme colors
+				ukraine: {
+					blue: '#0057B7',
+					yellow: '#FFD700',
+				},
+				soil: {
+					brown: '#5D4037',
+					light: '#8D6E63',
+				},
+				wheat: {
+					gold: '#F9BF3B',
+					light: '#FFE082',
+				},
+				crop: {
+					green: '#66BB6A',
+					dark: '#43A047',
 				}
 			},
 			borderRadius: {
@@ -84,11 +102,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'grow': {
+					'0%': { transform: 'scaleY(0)' },
+					'100%': { transform: 'scaleY(1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'grow': 'grow 1.5s ease-out'
+			},
+			fontFamily: {
+				'ubuntu': ['Ubuntu', 'sans-serif'],
+			},
+			backgroundImage: {
+				'wheat-pattern': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNNTAuOTkgMEw1MS4wMDEgNjBINDguOTk5TDQ5IDBINU4uMjE0IDBoMi43ODZ6TTM2IDUwaC00djEwaDRWNTB6bS02IDBoLTV2MTBoNVY1MHptMTEgMGg2djEwaC02VjUwem0tMTQtNGgtN3Y0aDdWNDZ6bTEwIDBoNC0ydjRoLTRWNDZ6bS0xNi01aC02djRoNlY0MXptMTItOWgtNnY0aDZWMzJ6bTMgNWgtM3Y0aDNWMzd6bS01LThoLTR2M2g0di00em02IDBoNXYtM2gtNXYzem0tOC05SDI4djdoNnYtOHptMTQgMHY2aDV2LTZINDl6TTE0IDBoLTJ2MTBoMlYwem02IDBoNHYxMGgtNFYwem02IDBoM3Y4aC0zVjB6IiBvcGFjaXR5PSIuMSIvPjwvc3ZnPg==')",
 			}
 		}
 	},

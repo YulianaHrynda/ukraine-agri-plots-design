@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,16 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-ubuntu;
+  }
+}
+
+@layer components {
+  .stat-card {
+    @apply bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-shadow;
+  }
+
+  .plot-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow;
   }
 }
